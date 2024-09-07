@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* element */
+        h1{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        /* class */
+        .fav{
+            border-left: 10px solid rgb(85, 85, 239);
+        }
+
+        /* id */
+        #memleket{
+            text-align: center;
+        }
+
+        #memleket::after{
+            content:"(OTOPARK)";
+            font-weight: bold;
+        }
+
+        /* immediate child */
+        div>p{
+            margin: 0 70px;
+            text-align: justify;
+            font-size:80%;
+        }
+
+        div p{
+            font-family:"Comic sans MS";
+        }
+
+        h1, h2{
+            background-color: black;
+            color: white;
+        }
+
+        /* attribute */
+        [title]{
+            background-color: yellow;
+        }
+
+        [title]{
+            font-style: italic;
+        }
+
+        h2+p{
+            text-indent: 40px;
+        }
+
+        /* odd ya da 2n+1 tek sayilar seçer */
+        li:nth-child(2n+1){
+            background-color: gainsboro;
+        }
+        /* 6.çocuk */
+        li:nth-child(6){
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            font-family: Impact;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px red;
+            color: cyan;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1><span>Turkiye</span></h1>
+    <h2>Kütahya</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, alias optio esse doloremque rem nulla maiores placeat iusto cum necessitatibus.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, alias optio esse doloremque rem nulla maiores placeat iusto cum necessitatibus.
+    </p>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quasi laborum, earum corrupti qui blanditiis odit voluptate exercitationem molestiae quod maiores excepturi magnam eum aut optio dicta perferendis cum laudantium?
+        </p>
+
+        <section>
+            <p>
+                Lorem <span title="kncjbsddbbd">porselen</span> dolor sit amet.
+            </p>
+        </section>
+    </div>
+
+    <h3>
+        Ilçeleri
+    </h3>
+    <ul>
+        <li>Merkez</li>
+        <li>Altintas</li>
+        <li>Aslanapa</li>
+        <li title="Dikkat Antik kent içerir !">çavdarhisar</li>
+        <li class="fav">Domaniç</li>
+        <li>Dumlupinar</li>
+        <li class="fav">Emet</li>
+        <li>gediz</li>
+        <li>Hisarcik</li>
+        <li>Pazarlar</li>
+        <li>Simav</li>
+        <li>Simav</li>
+        <li>sephane</li>
+        <li id="memleket" class="fav">Tavsanli</li>
+    </ul>
+</body>
+</html>
