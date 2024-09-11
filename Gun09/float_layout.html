@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=he, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header, nav, main>div, footer{
+            background-color: gainsboro;
+            margin-bottom: 10px;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        main>div{
+            float: left;
+            padding: 100px 10px;
+        }
+
+        main::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .col1, .col3{
+            width: 15%;
+        }
+
+        .col2{
+            width:calc(70% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* Ekran max 500px ise  */
+        @media (max-width: 500px){
+            .col1, .col2, .col3{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+        }
+
+        /* yazicidan çikti alinca header yazisi buyuk yazi olarak çikicak */
+        @media print{
+            header{
+                text-transform: uppercase;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>
+        <div class="col1">left  </div>
+        <div class="col2">Middle</div>
+        <div class="col3">Right</div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
