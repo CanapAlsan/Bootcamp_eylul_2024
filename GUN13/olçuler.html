@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olçu birimleri</title>
+
+    <style>
+        html{
+            /* 1rem i belirleyen kural */
+            font-size: 20px;
+        }
+
+        .çubuk1{
+            height: 20px;
+            background-color: purple;
+            width: 96px;
+        }
+
+        .çubuk2{
+            height: 20px;
+            background-color: pink;
+            width: 6rem;
+        }
+
+        .çubuk3{
+            height: 20px;
+            background-color: green;
+            width: 6em;
+        }
+
+        .çubuk2_kapsayici{
+            font-size: 10px;
+        }
+        .çubuk3_kapsayici{
+            font-size: 10px;
+        }
+
+        /* 1rem html kök elementinin font size degeridir. Birçok tarayicida html elementi 16px varsayilan bir font degerine sahiptir.
+        
+        1em */
+
+
+        .soru1{
+            font-size: 10px;
+        }
+
+        .soru1-a{
+            font-size: 1.5em;
+        }
+
+        .soru1-b{
+            font-size: 1.5em;
+        }
+
+        .soru1-c{
+            font-size: 1.5em;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Olçu birimleri</h1>
+    <h2>Genisligi 96px olan bir div</h2>
+    <div class="çubuk1"></div>
+   
+    <h2>Genisligi 6rem olan bir div</h2>
+    <div class="çubuk2_kapsayici">
+        <div class="çubuk2"></div>
+    </div>
+    
+    <div class="çubuk3_kapsayici">
+        <h2>Genisligi 6 rem olan bir div</h2>
+        <div class="çubuk3"></div>
+    </div>
+
+    <hr>
+
+    <div class="soru1">
+        <div class="soru1-a">
+            <div class="soru1-b">
+                <div class="soru1-c">
+                    SORU 1: MOLA YAKLASIYOR
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+</body>
+</html>
