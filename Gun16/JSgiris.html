@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript ogreniyorum</h1>
+
+    <p>Lorem ipsum dolor sit amet. </p>
+
+    <script>
+        // burasi JS Bolgesi
+
+        //dom ağacı document object model (dökümanın nesne modeli) 
+        //javasc document nesnesi üzerinden mevcut sayfadaki dökümanın tüm elementlerine erişebiliriz(belirli yöntemlerle)
+        //sayfadaki ilk p elementinin eriş ve içindeki metni değiştir
+
+
+        // sayfadaki ilk p elementine eris ve içinde metini degistir
+        let IlkParag = document.querySelector("p");
+
+        // nenselerin ozeliklerine . operatoru ile erisiriz
+        // = operatoru ile yeni degerler veririz
+        IlkParag.textContent = "Hello World !";
+
+        // elementlerin ozeliklerinin ozeliklerine erisip degistirebiliriz
+        IlkParag.style.color= "purple";
+
+        // DOM agacinin ilk dallarindan biri olan body'ye bu sekilde erisebiliriz
+        document.body.style.background = "linear-gradient(to right,yellow, blue)";
+
+
+        // programlama :
+        // Komutlari belli sirada belirli bir amaç için çalistirilsmasi (algoritma ile)
+        // komutlar insan dilinin yakin bir dille
+        // bilgisayara is yapmasi için fisildamaktir
+        // alert("Hoop ... palaaa!!!");
+        // alert("Hosgeldin :) ");
+    </script>
+</body>
+</html>

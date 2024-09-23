@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Bolgeleri</title>
+  </head>
+  <body>
+    <h1>Javascript giris 2</h1>
+    <p>
+      Bir HTML dokumaninda JS'i 3 farkli sekilde dokumana dahil edebilirsinz.
+    </p>
+
+    <script>
+      let x = 2 + 2;
+      document.write("<hr>");
+      document.write(x);
+    </script>
+    <!-- Harici dosya ile dahil etme -->
+
+    <script src="Kod.js"></script>
+    <hr />
+
+    <!-- Inline JS -->
+    <button onclick="alert('Basin goge erdi mi ?');">Bana tiklama</button>
+
+    <hr />
+    <button
+      id="minnos"
+      onmouseenter="document.getElementById('minnos').textContent = 'saka yaptim :) '"
+    >
+      Uzerime gelmeyon! burayi terk ederim !!
+    </button>
+  </body>
+</html>
