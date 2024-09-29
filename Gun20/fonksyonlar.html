@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonksyonlar</title>
+  </head>
+
+  <body>
+    <script src="../ortak/yaz.js"></script>
+
+    <script>
+      //aldigi sayinin bir fazlasini dondurur
+      // matematikteki "f(x) = x + 1" gibi
+      function birFazlasi(x) {
+        return x + 1;
+      }
+
+      //aldigi sayinin
+      let sayi = 3;
+      sayi = birFazlasi(sayi);
+      ciz(sayi);
+
+      /*
+        Doert cesit Fonksiyon ornekleyelim
+        1. PARAMETRE ALMAYAN DEGER DONDURMEYEN
+        2. PARAMETRE ALMAYAN DEGER DONDUREN
+        3. PARAMETRE ALAN DEGER DONDURMEYEN
+        4. PARAMETRE ALAN DEGER DONDUREN
+        */
+
+      //1. PARAMETRE ALMAYAN DEGER DONDURMEYEN
+      function ekranaTarihiveSaatiYazdir() {
+        let suAn = new Date();
+        ciz(suAn.toLocaleString("fr"));
+      }
+
+      ekranaTarihiveSaatiYazdir();
+
+      // paremetre almayan deger donduren
+      function ayinGunu() {
+        let suAn = new Date();
+        return suAn.getDate();
+      }
+
+      let gun = ayinGunu();
+      ciz("Bugun ayin " + gun + ". gunudur.");
+
+      //Parametre ALAN DEGER DONDURMEYEN
+      // Isçi fonksiyon: aldigi renk koduyla
+      // arka plani boyar.
+      function arkaplaniBoya(renk) {
+        document.body.style.background = renk;
+      }
+      arkaplaniBoya("linear-gradient(to right, #333, #777)");
+    </script>
+  </body>
+</html>
