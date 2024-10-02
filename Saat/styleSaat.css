@@ -7,17 +7,28 @@
 html, body{
     height: 100%;
     margin: 0;
-}
-
-body{
+    background-color: black;
+    font-family: "VT323", sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
     color: aliceblue;
-    font-family: "VT323", sans-serif;
+    
+}
+
+
+
+.time{
+    padding: 2rem;
+    font-size: 5vw;
+    background: #A7CFDF;
+    background: linear-gradient(to right, #A7CFDF 0%, #23538A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #saat{
     font-size: 15vw;
 }
+    

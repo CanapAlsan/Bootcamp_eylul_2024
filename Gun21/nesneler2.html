@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nesneler 2</title>
+  </head>
+  <body>
+    <script src="/ortak/yaz.js"></script>
+    <script>
+      //constructor fonksyon ile nesne uretme
+      function araba(markaA, yiLl, renKk) {
+        this.marka = markaA;
+        this.yil = yiLl;
+        this.renk = renKk;
+
+        this.ozetle = function () {
+          return this.renk + " renkli " + this.yil + " model " + this.marka;
+        };
+
+        ciz("benim arabam var");
+      }
+
+      let a1 = new araba("Maserati", 2024, "black");
+      console.log(a1);
+
+      ciz(a1.ozetle());
+
+      let a2 = new araba("BMWi7", 2024, "Siyah");
+      ciz(a2.ozetle());
+    </script>
+  </body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new -->
