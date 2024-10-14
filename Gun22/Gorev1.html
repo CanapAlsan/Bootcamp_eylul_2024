@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorev</title>
+</head>
+<body>
+    <!-- <h1>Gorev</h1>
+    <ul>
+        <li>6 elemanli bir sayi dizisini olustur: 4, 8, 15, 16, 23, 42</li>
+        <li>basina 10 ekle</li>
+        <li>sonuna 99 ekle</li>
+        <li>2. indeksten bvaslayarak 3 adet sayi sil</li>
+        <li>3. indekse 77 sayisini sok (mevcutlara dokunma)</li>
+        <li>2. indeksteki sayiyi 66 olarak guncelle</li>
+        <li>basini sil ve silineni yazdir</li>
+        <li>sonunu sil ve silineni yazdir</li>
+    </ul> -->
+
+    <script src="/ortak/yaz.js"></script>
+    <script>
+        let array = [4, 8, 15, 16, 23, 42];
+        ciz(array);
+
+        array.unshift(10);
+        ciz(array);
+
+        array.push(99);
+        ciz(array);
+
+        array.splice(2,3);
+        ciz(array);
+
+        array.splice(3,0,77);// on se met sur le 3eme index, on enleve rien, on insert 77 
+        ciz(array);
+
+        array[2] = 66;
+        ciz(array);
+
+        yaz("basi: " + array.shift());
+        ciz("dizi elemnalari: " + array);
+
+        yaz("sonu: " + array.pop());
+        ciz("dizi elemanlari: " + array);
+
+
+
+
+    </script>
+</body>
+</html>
