@@ -1,0 +1,50 @@
+<!-- Gorev 3: parametre olarak sayinin karesine hasaplayan fonksiyonnu arrow fonksyon yontemiyle tanimla ve bir degiskende sakla. Bu fonksyonu kullanarak 1' den 10 kadar olan sayilarin karesi html'e olusturdugun ul' un içine li'ler haleinde ekle. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gorev 3</title>
+  </head>
+  <body>
+    <!-- Yontem 1: oguzhan -->
+    <ul id="liste1"></ul>
+
+    <script>
+      const karesi = (x) => x * x;
+      const ul1 = document.getElementById("liste1");
+
+      for (let i = 1; i <= 10; i++) {
+        ul1.innerHTML += "<li>" + karesi(i) + "</li>";
+      }
+
+    </script>
+
+    <!-- Yontem 2: oguzhan -->
+    <ul id="liste2"></ul>
+
+    <script>
+      const karesiAl = x => Math.pow(x, 2);
+      const ul2 = document.getElementById("liste2");
+
+      for (let i = 1; i <= 10; i++) {
+        ul2.innerHTML += "<li>" + karesiAl(i) + "</li>";
+      }
+      
+    </script>
+
+    <!-- yontem 3: -->
+    <ul id="liste3"></ul>
+
+    <script>
+        const karaHesapla = sayi => sayi **2;
+        const ul3 = document.getElementById("Liste3");
+
+        for(let i = 1; i <+ 10; )
+        li.textContent = karaHesapla(i);
+        ul3.appendChild(li);
+    </script>
+
+
+
+    </html>
